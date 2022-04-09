@@ -1,4 +1,4 @@
-export class Goal {
+export class Quote {
     
 
   showDescription: boolean;
