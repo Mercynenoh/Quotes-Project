@@ -49,12 +49,15 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote)
   }
    addVote(index){
+  // this.upvote = parseInt(index.upvote) + 1;
+    alert('hi')
     // index=0; index< this.quotes.length; index ++
-     this.quotes[index].upvote=  index ++
-     this.quotes[index].downvote= index ++
+     this.quotes[index].upvote=  parseInt(index.upvote) +1
+     this.quotes[index].downvote=  parseInt(index.downvote) +1
    
     
   }
+
  
 }
   
