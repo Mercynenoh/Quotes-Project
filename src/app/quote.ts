@@ -9,7 +9,8 @@ constructor(
     public downvote:number,
     public description: string,
     public yourname: string,
-    public completeDate: Date
+    public completeDate: Date,
+  
     ){
   this.showDescription=false;
 }
