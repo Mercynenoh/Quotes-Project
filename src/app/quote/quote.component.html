@@ -7,15 +7,15 @@
         <div *ngFor= 'let quote of quotes;let i = index'>
           <div *ngIf= "quote.upvote==highest && quote.upvote>0; then highlight else leave"></div>
           <ng-template #highlight >
-            <h6 appHighlight  >{{quote.name}} <span><i class='bx bxs-like bx-sm counter' (click)='addVote(i)' ></i>{{quote.upvote}} </span> 
-              <span><i class='bx bxs-like bx-sm bx-flip-vertical counter'(click)='addVote(i)' ></i>{{quote.downvote}}</span>
+            <h6 appHighlight  >{{quote.name}} <span><i class='bx bxs-like bx-sm counter' (click)='upVote(i)' ></i>{{quote.upvote}} </span> 
+              <span><i class='bx bxs-like bx-sm bx-flip-vertical counter'(click)='downVote(i)' ></i>{{quote.downvote}}</span>
              
             </h6>
           </ng-template>
           <ng-template #leave>
-            <h6 >{{quote.name}} <span> <i class='bx bxs-like bx-sm counter' (click)='addVote(i)'></i>{{quote.upvote}} </span> 
+            <h6 >{{quote.name}} <span> <i class='bx bxs-like bx-sm counter' (click)='upVote(i)'></i>{{quote.upvote}} </span> 
               <span>
-                <i class='bx bxs-like bx-sm bx-flip-vertical counter' (click)='addVote(i)'></i>{{quote.downvote}}</span>
+                <i class='bx bxs-like bx-sm bx-flip-vertical counter' (click)='downVote(i)'></i>{{quote.downvote}}</span>
                 
               </h6>
              
