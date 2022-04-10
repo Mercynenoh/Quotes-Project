@@ -3,3 +3,12 @@ h6 {
     color: rgb(46, 46, 140);
  
  }
+ .container{
+    background:linear-gradient(to right ,#f999d6,#c7f0f5);
+    margin-top: 25px;
+ }
+ h1{
+     text-align: center;
+     color:blue;
+     font-weight: 800;
+ }
