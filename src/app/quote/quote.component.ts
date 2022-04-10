@@ -34,7 +34,10 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'You will face many defeats in life, but never let yourself be defeated.', 0, 0, 'Maya Angelou','Mercy', new Date(2022,4,9) ),
   ];
 
-  
+  arr: number[] = this.quotes.map(quote=>quote.upvote)
+  highest=Math.max (...this.arr)
+  constructor() { }
+
 
  @Output()
   upVote(index){
@@ -47,10 +50,7 @@ export class QuoteComponent implements OnInit {
   this.quotes[index].downvote= this.quotes[index].downvote+1
  }
 
- arr: number[] = this.quotes.map(quote=>quote.upvote)
-  highest=Math.max (...this.arr)
-  constructor() { }
-
+ 
   ngOnInit(): void {
   }
  
