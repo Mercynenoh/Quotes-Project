@@ -2,6 +2,14 @@
     <h2 class="text-center">Create a new Quote</h2>
     <hr>
     <form (ngSubmit)='submitQuote()' #goalForm='ngForm' >
+      <div class="form-group">
+  
+        <label for="description">Description</label>
+        <input type="text" required class="form-control" id="description" [(ngModel)]= "newQuote.title" name="description" #name='ngModel' required>
+     <div [hidden]= "name.valid ||name.pristine" class="alert alert-danger">
+       <p>Description is required</p>
+     </div>
+ </div>
         <div class="form-group">
   
             <label for="name">Quote</label>
@@ -12,6 +20,7 @@
               </div>
   
         </div>
+        
         <div class="form-group">
   
              <label for="description">Author</label>
