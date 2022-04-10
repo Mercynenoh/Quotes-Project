@@ -39,7 +39,8 @@ export class QuoteComponent implements OnInit {
 
  @Output()
   upVote(index){
-    this.quotes[index].upvote= ++ index
+    this.quotes[index].upvote= this.quotes[index].upvote+1
+    // this.amount=this.amount+1;
     
    
  }
