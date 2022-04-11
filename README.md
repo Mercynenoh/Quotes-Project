@@ -1,8 +1,9 @@
 # Quotes-App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0. The applicationgives the user a chance to view quotes, like or dislike them and even add their own quotes.!
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0. The application gives the user a chance to view quotes, like or dislike them and even add their own quotes.!
 
-[Screenshot from 2022-04-11 10-59-57](https://user-images.githubusercontent.com/94294714/162702566-014980e6-60f8-4a9c-ac17-202facd59928.png)
+![Screenshot from 2022-04-11 10-59-57](https://user-images.githubusercontent.com/94294714/162706372-04595a74-cb92-4236-a6b3-c01b30f9fdb9.png)
+
 
 
 ## By:
